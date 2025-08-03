@@ -10,3 +10,15 @@
    font-family: "Montserrat", sans-serif;
 }
 
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(20deg,
+      rgb(214, 103, 47),
+      rgb(3, 58, 57)
+      );
+}
+
