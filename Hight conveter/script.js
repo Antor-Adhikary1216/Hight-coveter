@@ -1,12 +1,12 @@
 const form = document.querySelector( " form");
-form.addEventListener( " submit", function( e){ 
+form.addEventListener( " submit", function(e){ 
 
-    let feeInput = document.querySelector( "#feet")
+    let feeInput = document.querySelector("#feet")
     let inchesInput = document.querySelector
-    ("inches")
+    ("#inches")   
 
     const results = document.querySelector
-    ( "#results");
+    ("#results");
 
 
     e.preventDefault();
@@ -18,19 +18,19 @@ form.addEventListener( " submit", function( e){
         results.textContent = "please enter a valid number!";
     }
     
-    else if( feet < 0){
+    else if( feet <0){
         results.textContent = "please enter a feet value bigger than 0.";
 
     }
-    else if(inches < 0 || inches >=12){
+    else if(inches <0 || inches >= 12){
         results.textContent = " plaes enter an inch value between 0 and 12.";
 
     } else{ 
-        let totalInches = feet *12 + inches;
-        let cm = totalInches*2.54;
+        let totalInches = feet * 12 + inches;
+        let cm = totalInches * 2.54;
         results.textContent = `${cm.toFixed(2)} cm`;
         feeInput.value = "";
-        inchesInput.value ="";
+        inchesInput.value = "";
 
     }
 
